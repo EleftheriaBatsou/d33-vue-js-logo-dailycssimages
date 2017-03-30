@@ -1,0 +1,101 @@
+.title {
+  text-align: center;
+}
+
+#footer a:link {
+  color: black;
+}
+
+#footer a:visited {
+  color: black;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+body {
+  background: #fff;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  /*optional background or border*/
+  margin-top: 2%;
+  padding-top: 5%;
+  width: 630px;
+  height: 330px;
+  background: none;
+}
+
+#outer {
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  width: 45%;
+  height: 65%;
+  background: #35495e;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  animation: out 3s 1;
+}
+
+#inner {
+  position: absolute;
+  top: 0%;
+  left: 19%;
+  width: 62%;
+  height: 62%;
+  background: #41b883;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  animation: in 3s 1;
+}
+
+#white {
+  position: absolute;
+  top: 0%;
+  left: 32%;
+  width: 34%;
+  height: 38%;
+  background: white;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  animation: white 3s 1;
+}
+
+@keyframes out {
+  0% {
+    transform: rotatex(0deg);
+  }
+  50% {
+    transform: rotatex(180deg);
+  }
+  100% {
+    transform: rotatex(360deg);
+  }
+}
+@keyframes in {
+  0% {
+    transform: rotatex(0deg);
+  }
+  50% {
+    transform: rotatex(-180deg);
+  }
+  100% {
+    transform: rotatex(-360deg);
+  }
+}
+@keyframes white {
+  0% {
+    transform: rotatex(0deg);
+  }
+  50% {
+    transform: rotatex(180deg);
+  }
+  100% {
+    transform: rotatex(360deg);
+  }
+}
